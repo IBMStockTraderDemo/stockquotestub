@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<title>Quick start guide to working with the published docker stubs</title>
+<style>
+.command {
+}
+</style>
+</head>
+<body>
+   <h2>Working with Docker</h2>
+   <p>
+      Full details of installing, configuring and using Docker can be found on the <a href="https://docs.docker.com/">Docker
+         Documentation web site</a>
+   </p>
+   <p>
+      The following sections provide basic examples for building and running docker images for the published stubs. For
+      more detailed information, see the <a
+         href="http://www.ibm.com/support/knowledgecenter/SSBLQQ_9.1.0/com.ibm.rational.test.lt.rtw.nav.doc/rtw_version_welcome.html">IBM
+         Rational Integration Tester Knowledge Center</a>
+   </p>
+   <h2>Building a docker image that contains the stubs</h2>
+   <p>The following basic docker command could be used to build an image from the Dockerfile and context:</p>
+   <p>
+      <span class="command">docker build -t &lt;myimage&gt; &lt;path_to_publish_output_directory&gt;</span>
+   </p>
+   <p>
+      where:<br> <span class="command">&lt;myimage&gt;</span> is the name you would like to give to the new image<br>
+      <span class="command">&lt;path_to_publish_output_directory&gt;</span> is the directory where the Dockerfile and
+      related files were published
+   </p>
+   <p>
+      For example:<br>
+   <p>
+      <span class="command">docker build -t mystub /output</span>
+   </p>
+   <h2>Running a container to run the stubs</h2>
+   <p>The following basic docker command could be used to run the built image:</p>
+   <p>
+      <span class="command">docker run -e RATIONAL_LICENSE_FILE=&lt;license_server&gt; &lt;myimage&gt;</span>
+   </p>
+   <p>
+      where:<br> <span class="command">&lt;license_server&gt;</span> is the host and port of the rational common
+      license server in the form port@host<br> <span class="command">&lt;myimage&gt;</span> is the name of the
+      image you previously created
+   </p>
+   <p>
+      For example:<br>
+   <p>
+      <span class="command">docker run -e RATIONAL_LICENSE_FILE=27000@licserver.example.com mystub</span>
+   </p>
+   <p>
+      <b>Note</b><br>If you require the stub to work with the Rational Integration Tester HTTP/TCP proxy you will
+      need to specify further options when running the container. For information see <a
+         href="http://www.ibm.com/support/knowledgecenter/SSBLQQ_9.1.0/com.ibm.rational.test.lt.rtw.nav.doc/rtw_version_welcome.html">IBM
+         Rational Integration Tester Knowledge Center</a>
+   </p>
+
+</body>
+</html>

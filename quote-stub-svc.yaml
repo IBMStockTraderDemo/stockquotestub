@@ -1,0 +1,16 @@
+#Deploy the service
+apiVersion: v1
+kind: Service
+metadata:
+  name: stock-quote-service
+  labels:
+    app: quote-stub
+spec:
+  type: NodePort
+  ports:
+    - name: http
+      protocol: TCP
+      port: 9080
+      targetPort: 31002
+  selector:
+    app: quote-stub
