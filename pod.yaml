@@ -26,7 +26,8 @@ spec:
     spec:
       containers:
       - name: quote-stub
-        image: mycluster.icp:8500/default/quotestub:latest 
+        image: stocktraderdemo/quotestub
+        imagePullPolicy: Always
         env:
           - name: RATIONAL_LICENSE_FILE
             value: 27000@rlksserver.rtp.raleigh.ibm.com
