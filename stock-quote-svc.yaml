@@ -1,4 +1,6 @@
-#Deploy the service
+#
+# Reset the stock-quote-service to pointo the original application pod
+#
 apiVersion: v1
 kind: Service
 metadata:

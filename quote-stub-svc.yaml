@@ -1,4 +1,6 @@
-#Deploy the service
+#
+# Update the stock-quote-service to point to the virtual service stub
+#
 apiVersion: v1
 kind: Service
 metadata:
