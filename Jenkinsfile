@@ -15,6 +15,7 @@ pipeline {
        stage('Deliver') {
             steps{ 
                 sh '/push2dockerhub.sh $imagename'
+                sh 'docker rm $imagename'
             }
        }
     }
