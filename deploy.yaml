@@ -27,6 +27,7 @@ spec:
       containers:
       - name: quote-stub
         image: stocktraderdemo/quotestub:latest 
+        imagePullPolicy: Always
         env:
           - name: RATIONAL_LICENSE_FILE
             value: 27000@rlks.rtp.raleigh.ibm.com
