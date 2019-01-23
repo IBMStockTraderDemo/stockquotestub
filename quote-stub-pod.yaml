@@ -32,7 +32,7 @@ spec:
         imagePullPolicy: Always
         env:
           - name: RATIONAL_LICENSE_FILE
-            value: 27000@rlksserver.rtp.raleigh.ibm.com
+            value: 27000@169.44.130.138
         ports:
           - containerPort: 31002
         imagePullPolicy: Always

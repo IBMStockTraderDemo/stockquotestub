@@ -17,5 +17,10 @@ pipeline {
                 sh '/push2dockerhub.sh $imagename'
             }
        }
+       stage('Deploy') {
+            steps{ 
+                sh '/push2iks.sh stock-trader quote-stub quote-stub-pod.yaml'
+            }
+       }
     }
 }
