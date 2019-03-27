@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: quote-stub
-        image: stocktraderdemo/quote-stub
+        image: us.icr.io/kacz/quote-stub
         imagePullPolicy: Always
         env:
           - name: RATIONAL_LICENSE_FILE

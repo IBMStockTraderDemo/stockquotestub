@@ -14,7 +14,7 @@ pipeline {
        }  
        stage('Deliver') {
             steps{ 
-                sh '/push2dockerhub.sh $imagename'
+                sh '/push2iksRegistry.sh $imagename'
             }
        }
        stage('Deploy') {
