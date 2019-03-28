@@ -36,3 +36,5 @@ spec:
         ports:
           - containerPort: 31002
         imagePullPolicy: Always
+     imagePullSecrets:
+        - name: iks-cr-registry-secret
