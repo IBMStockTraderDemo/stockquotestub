@@ -41,4 +41,4 @@ COPY /stubs.info /stubs.info
 # Stub Quoter is exposed on port 31002/TCP
 EXPOSE 31002
 
-ENTRYPOINT ["/bin/tini", "--", "/IntegrationTester/RunTests", "-project", "/Project/test.ghp", "-environment", "ubuntu", "-noHTTP", "-run", "3293aa9f:167a43a6e8e:-7c32", "-environmentTags", "env" ]
+ENTRYPOINT ["/bin/tini", "--", "/IntegrationTester/RunTests", "-project", "/Project/stockquotestub.ghp", "-environment", "ubuntu", "-noHTTP", "-run", "3293aa9f:167a43a6e8e:-7c32", "-environmentTags", "env" ]
