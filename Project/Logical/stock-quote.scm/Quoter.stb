@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1544654919039" createdUser="root" id="3293aa9f:167a43a6e8e:-7c32" type="stub_resource" updatedTimestamp="1544654919039" updatedUser="root" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1544654919039" createdUser="root" id="3293aa9f:167a43a6e8e:-7c32" type="stub_resource" updatedTimestamp="1554121920853" updatedUser="root" version="1.1">
    <loggingConfiguration debug="true" writeStubEventsToDB="true"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -27,40 +27,40 @@
                            </filterActionGroup>
                            <_c name="text" sch="Text" type="7" value="" version="1.2"/>
                         </bodyfilters>
-                        <headerfilters meTy="Message" name="" type="12" version="1.2">
+                        <headerfilters assocdefid="Http Subscribe" meTy="Message" name="" sch="Http Subscribe" type="12" version="1.2">
                            <fieldActionGroup>
                               <fieldAction enabled="false" type="1">
                                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                               </fieldAction>
                            </fieldActionGroup>
-                           <_c meTy="String" name="Method" type="7" value="GET" version="1.2">
+                           <_c meTy="String" name="Method" sch="Http Subscribe" type="7" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="GET" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="String" name="URL" type="7" value="/stock-quote/GOOD" version="1.2">
+                           <_c meTy="String" name="URL" sch="Http Subscribe" type="7" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="/stock-quote/GOOD" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                           <_c meTy="Message" name="httpDetails" sch="Http Subscribe" type="12" version="1.2">
                               <fieldActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                  </fieldAction>
                               </fieldActionGroup>
-                              <_c meTy="String" name="Version" type="7" value="1.1" version="1.2">
+                              <_c meTy="String" name="Version" sch="Http Subscribe" type="7" version="1.2">
                                  <filterActionGroup>
                                     <fieldAction enabled="false" type="1">
                                        <fieldAction enabled="false" exp="1.1" type="0"/>
                                     </fieldAction>
                                  </filterActionGroup>
                               </_c>
-                              <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                              <_c meTy="Message" name="httpHeaders" sch="Http Subscribe" type="12" version="1.2">
                                  <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
@@ -68,14 +68,14 @@
                                  </fieldActionGroup>
                               </_c>
                            </_c>
-                           <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+                           <_c meTy="String" name="MessageType" sch="Http Subscribe" type="7" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="Date-Time" name="rcvdTimestamp" type="11" version="1.2">
+                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Subscribe" type="11" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="14:46:40.626 2018/12/12" type="0"/>
@@ -93,7 +93,7 @@
                                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                        </fieldAction>
                                     </fieldActionGroup>
-                                    <_c meTy="String" name="StatusCode" sch="Http Send Reply" type="7" version="1.2">
+                                    <_c meTy="String" name="StatusCode" sch="Http Send Reply" type="7" value="200" version="1.2">
                                        <fieldActionGroup>
                                           <fieldAction type="0">
                                              <fieldAction exp="200" type="0"/>
@@ -103,7 +103,7 @@
                                           </fieldAction>
                                        </fieldActionGroup>
                                     </_c>
-                                    <_c meTy="String" name="ReasonPhrase" sch="Http Send Reply" type="7" version="1.2">
+                                    <_c meTy="String" name="ReasonPhrase" sch="Http Send Reply" type="7" value="OK" version="1.2">
                                        <fieldActionGroup>
                                           <fieldAction type="0">
                                              <fieldAction exp="OK" type="0"/>
@@ -113,7 +113,7 @@
                                           </fieldAction>
                                        </fieldActionGroup>
                                     </_c>
-                                    <_c meTy="String" name="MessageType" sch="Http Send Reply" type="7" version="1.2">
+                                    <_c meTy="String" name="MessageType" sch="Http Send Reply" type="7" value="http.text.message.type" version="1.2">
                                        <fieldActionGroup>
                                           <fieldAction type="0">
                                              <fieldAction exp="http.text.message.type" type="0"/>
@@ -129,7 +129,7 @@
                                              <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                           </fieldAction>
                                        </fieldActionGroup>
-                                       <_c meTy="String" name="Version" sch="Http Send Reply" type="7" version="1.2">
+                                       <_c meTy="String" name="Version" sch="Http Send Reply" type="7" value="1.1" version="1.2">
                                           <fieldActionGroup>
                                              <fieldAction type="0">
                                                 <fieldAction exp="1.1" type="0"/>
@@ -145,7 +145,7 @@
                                                 <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                              </fieldAction>
                                           </fieldActionGroup>
-                                          <_c meTy="String" name="X-Powered-By" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="X-Powered-By" sch="Http Send Reply" type="7" value="Servlet/3.1" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="Servlet/3.1" type="0"/>
@@ -155,7 +155,7 @@
                                                 </fieldAction>
                                              </fieldActionGroup>
                                           </_c>
-                                          <_c meTy="String" name="X-OneAgent-JS-Injection" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="X-OneAgent-JS-Injection" sch="Http Send Reply" type="7" value="true" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="true" type="0"/>
@@ -165,7 +165,7 @@
                                                 </fieldAction>
                                              </fieldActionGroup>
                                           </_c>
-                                          <_c meTy="String" name="Set-Cookie" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="Set-Cookie" sch="Http Send Reply" type="7" value="dtCookie=9332DC00E8429A4CAFAB87342FB965A2||1; Path=/" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="dtCookie=9332DC00E8429A4CAFAB87342FB965A2||1; Path=/" type="0"/>
@@ -175,7 +175,7 @@
                                                 </fieldAction>
                                              </fieldActionGroup>
                                           </_c>
-                                          <_c meTy="String" name="Content-Type" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="Content-Type" sch="Http Send Reply" type="7" value="application/json" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="application/json" type="0"/>
@@ -185,7 +185,7 @@
                                                 </fieldAction>
                                              </fieldActionGroup>
                                           </_c>
-                                          <_c meTy="String" name="Content-Language" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="Content-Language" sch="Http Send Reply" type="7" value="en-US" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="en-US" type="0"/>
@@ -559,40 +559,40 @@
                            </filterActionGroup>
                            <_c name="text" sch="Text" type="7" value="" version="1.2"/>
                         </bodyfilters>
-                        <headerfilters meTy="Message" name="" type="12" version="1.2">
+                        <headerfilters assocdefid="Http Subscribe" meTy="Message" name="" sch="Http Subscribe" type="12" version="1.2">
                            <fieldActionGroup>
                               <fieldAction enabled="false" type="1">
                                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                               </fieldAction>
                            </fieldActionGroup>
-                           <_c meTy="String" name="Method" type="7" value="GET" version="1.2">
+                           <_c meTy="String" name="Method" sch="Http Subscribe" type="7" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="GET" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="String" name="URL" type="7" value="/stock-quote/IBM" version="1.2">
+                           <_c meTy="String" name="URL" sch="Http Subscribe" type="7" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="/stock-quote/IBM" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                           <_c meTy="Message" name="httpDetails" sch="Http Subscribe" type="12" version="1.2">
                               <fieldActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                  </fieldAction>
                               </fieldActionGroup>
-                              <_c meTy="String" name="Version" type="7" value="1.1" version="1.2">
+                              <_c meTy="String" name="Version" sch="Http Subscribe" type="7" version="1.2">
                                  <filterActionGroup>
                                     <fieldAction enabled="false" type="1">
                                        <fieldAction enabled="false" exp="1.1" type="0"/>
                                     </fieldAction>
                                  </filterActionGroup>
                               </_c>
-                              <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                              <_c meTy="Message" name="httpHeaders" sch="Http Subscribe" type="12" version="1.2">
                                  <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
@@ -600,14 +600,14 @@
                                  </fieldActionGroup>
                               </_c>
                            </_c>
-                           <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+                           <_c meTy="String" name="MessageType" sch="Http Subscribe" type="7" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="Date-Time" name="rcvdTimestamp" type="11" version="1.2">
+                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Subscribe" type="11" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="14:46:39.397 2018/12/12" type="0"/>
@@ -625,7 +625,7 @@
                                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                        </fieldAction>
                                     </fieldActionGroup>
-                                    <_c meTy="String" name="StatusCode" sch="Http Send Reply" type="7" version="1.2">
+                                    <_c meTy="String" name="StatusCode" sch="Http Send Reply" type="7" value="200" version="1.2">
                                        <fieldActionGroup>
                                           <fieldAction type="0">
                                              <fieldAction exp="200" type="0"/>
@@ -635,7 +635,7 @@
                                           </fieldAction>
                                        </fieldActionGroup>
                                     </_c>
-                                    <_c meTy="String" name="ReasonPhrase" sch="Http Send Reply" type="7" version="1.2">
+                                    <_c meTy="String" name="ReasonPhrase" sch="Http Send Reply" type="7" value="OK" version="1.2">
                                        <fieldActionGroup>
                                           <fieldAction type="0">
                                              <fieldAction exp="OK" type="0"/>
@@ -645,7 +645,7 @@
                                           </fieldAction>
                                        </fieldActionGroup>
                                     </_c>
-                                    <_c meTy="String" name="MessageType" sch="Http Send Reply" type="7" version="1.2">
+                                    <_c meTy="String" name="MessageType" sch="Http Send Reply" type="7" value="http.text.message.type" version="1.2">
                                        <fieldActionGroup>
                                           <fieldAction type="0">
                                              <fieldAction exp="http.text.message.type" type="0"/>
@@ -661,7 +661,7 @@
                                              <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                           </fieldAction>
                                        </fieldActionGroup>
-                                       <_c meTy="String" name="Version" sch="Http Send Reply" type="7" version="1.2">
+                                       <_c meTy="String" name="Version" sch="Http Send Reply" type="7" value="1.1" version="1.2">
                                           <fieldActionGroup>
                                              <fieldAction type="0">
                                                 <fieldAction exp="1.1" type="0"/>
@@ -677,7 +677,7 @@
                                                 <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                              </fieldAction>
                                           </fieldActionGroup>
-                                          <_c meTy="String" name="X-Powered-By" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="X-Powered-By" sch="Http Send Reply" type="7" value="Servlet/3.1" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="Servlet/3.1" type="0"/>
@@ -687,7 +687,7 @@
                                                 </fieldAction>
                                              </fieldActionGroup>
                                           </_c>
-                                          <_c meTy="String" name="X-OneAgent-JS-Injection" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="X-OneAgent-JS-Injection" sch="Http Send Reply" type="7" value="true" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="true" type="0"/>
@@ -697,7 +697,7 @@
                                                 </fieldAction>
                                              </fieldActionGroup>
                                           </_c>
-                                          <_c meTy="String" name="Set-Cookie" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="Set-Cookie" sch="Http Send Reply" type="7" value="dtCookie=38CE89A472C7EE6066E870D33B2E16E2||1; Path=/" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="dtCookie=38CE89A472C7EE6066E870D33B2E16E2||1; Path=/" type="0"/>
@@ -707,7 +707,7 @@
                                                 </fieldAction>
                                              </fieldActionGroup>
                                           </_c>
-                                          <_c meTy="String" name="Content-Type" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="Content-Type" sch="Http Send Reply" type="7" value="application/json" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="application/json" type="0"/>
@@ -717,7 +717,7 @@
                                                 </fieldAction>
                                              </fieldActionGroup>
                                           </_c>
-                                          <_c meTy="String" name="Content-Language" sch="Http Send Reply" type="7" version="1.2">
+                                          <_c meTy="String" name="Content-Language" sch="Http Send Reply" type="7" value="en-US" version="1.2">
                                              <fieldActionGroup>
                                                 <fieldAction type="0">
                                                    <fieldAction exp="en-US" type="0"/>
@@ -738,7 +738,7 @@
                                     </fieldActionGroup>
                                     <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="JSON.nodeformatter" sch="Text" type="12" version="1.2">
                                        <fieldExpander fieldExpanderID="JSON.fieldexpander" fieldSchema="JSON" fieldSchemaRoot="Object"/>
-                                       <contentTree>{"symbol":"IBM","date":"2018-03-27","price":151.91}<defaultActions>
+                                       <contentTree>{"symbol":"IBM","date":"2018-03-27","price":140.0}<defaultActions>
                                              <defaultMessageActions>
                                                 <fieldActionGroup>
                                                    <fieldAction enabled="false" type="1">
@@ -802,6 +802,21 @@
          </editableResource>
       </testTree>
       <tagDataStore inputMode="NONE" outputMode="NONE"/>
+      <testprops messageClearance="false"/>
+      <stubprops behaviourStyle="ONE_TO_ONE" majorVersion="1" messageClearance="false" minorVersion="0" optimise="false" wrks="10">
+         <responseTimeTable>
+            <entry key="3293aa9f:167a43a6e8e:-7c36">
+               <value type="NO_DELAY"/>
+            </entry>
+            <entry key="3293aa9f:167a43a6e8e:-7c35">
+               <value type="NO_DELAY"/>
+            </entry>
+            <entry key="3293aa9f:167a43a6e8e:-7c34">
+               <value type="NO_DELAY"/>
+            </entry>
+         </responseTimeTable>
+         <environmentTasks preventExecutionOnFailure="false"/>
+      </stubprops>
       <Session mode="NONE"/>
    </resourceConfig>
 </editableResource>
