@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1544654919039" createdUser="root" id="3293aa9f:167a43a6e8e:-7c32" type="stub_resource" updatedTimestamp="1555449560701" updatedUser="root" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1544654919039" createdUser="root" id="3293aa9f:167a43a6e8e:-7c32" type="stub_resource" updatedTimestamp="1555515992202" updatedUser="root" version="1.1">
    <loggingConfiguration debug="true" writeStubEventsToDB="true"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -738,7 +738,7 @@
                                     </fieldActionGroup>
                                     <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="JSON.nodeformatter" sch="Text" type="12" version="1.2">
                                        <fieldExpander fieldExpanderID="JSON.fieldexpander" fieldSchema="JSON" fieldSchemaRoot="Object"/>
-                                       <contentTree>{"symbol":"IBM","date":"2018-03-27","price":145.0}<defaultActions>
+                                       <contentTree>{"symbol":"IBM","date":"2018-03-27","price":150.0}<defaultActions>
                                              <defaultMessageActions>
                                                 <fieldActionGroup>
                                                    <fieldAction enabled="false" type="1">
@@ -801,7 +801,7 @@
             </resourceConfig>
          </editableResource>
       </testTree>
-      <tagDataStore inputMode="NONE" outputMode="NONE"/>
+      <tagDataStore identifier="-772bbfad:16a28036b25:-7d6d" inputMode="NONE" outputMode="NONE"/>
       <testprops messageClearance="false"/>
       <stubprops behaviourStyle="ONE_TO_ONE" majorVersion="1" messageClearance="false" minorVersion="0" optimise="false" wrks="10">
          <responseTimeTable>
